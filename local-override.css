@@ -1,4 +1,4 @@
-@font-face { font-family: Bebaskai; src:url('../BebasKai.otf'); }
+/* @font-face { font-family: Bebaskai; src:url('../BebasKai.otf'); } */
 @media (max-width: 768px){
   .desktop-only{
     display: none;
