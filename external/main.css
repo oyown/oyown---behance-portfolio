@@ -1,8 +1,11 @@
 
 @font-face { font-family: Bebaskai; src:url('../BebasKai.otf'); }
-body *{
-  font-family: Bebaskai !important;
+@media (max-width: 768px){
+  .desktop-only{
+    display: none;
+  }
 }
+
 
 .disable-download img {
     pointer-events: none; }
@@ -1149,7 +1152,7 @@ body *{
       text-align: left; }
     
     .logo {
-      font-family: shzc;
+      font-family: Bebaskai;
       font-size: 35px;
       font-style: normal;
       font-weight: 400;
@@ -1169,7 +1172,7 @@ body *{
         text-transform: uppercase; }
     
     .logo-secondary {
-      font-family: shzc;
+      font-family: Bebaskai;
       font-size: 22px;
       font-style: normal;
       font-weight: 400;
@@ -1194,7 +1197,7 @@ body *{
       width: 30%; }
       nav .gallery-title a {
         color: #AEAEAE;
-        font-family: shzc;
+        font-family: Bebaskai;
         font-size: 19px;
         font-style: normal;
         font-weight: 400;
@@ -1212,7 +1215,7 @@ body *{
           text-transform: uppercase; }
       nav .project-title a {
         color: #AEAEAE;
-        font-family: shzc;
+        font-family: Bebaskai;
         font-size: 19px;
         font-style: normal;
         font-weight: 400;
@@ -1230,7 +1233,7 @@ body *{
           text-transform: uppercase; }
       nav .page-title a {
         color: #AEAEAE;
-        font-family: shzc;
+        font-family: Bebaskai;
         font-size: 19px;
         font-style: normal;
         font-weight: 400;
@@ -1248,7 +1251,7 @@ body *{
           text-transform: uppercase; }
       nav .link-title a {
         color: #AEAEAE;
-        font-family: shzc;
+        font-family: Bebaskai;
         font-size: 19px;
         font-style: normal;
         font-weight: 400;
@@ -1297,7 +1300,7 @@ body *{
         padding-right: 15px; }
       .pf-footer-social a {
         background: rgba(255, 255, 255, 0.06);
-        height: 45px;
+        padding: 4px 0;
         line-height: 45px;
         text-align: center;
         width: 45px;
@@ -1383,13 +1386,13 @@ body *{
       margin-bottom: 0px;
       padding-left: 0%;
       padding-right: 0%;
-      padding-bottom: 100px;
+      padding-bottom: 0;
       padding-top: 194px; }
       .masthead:after {
         display: none; }
       .masthead h1 {
         color: #fff;
-        font-family: shzc;
+        font-family: Bebaskai;
         font-size: 60px;
         font-style: normal;
         font-weight: 400;
@@ -1400,7 +1403,7 @@ body *{
         text-transform: none; }
       .masthead p {
         color: #999999;
-        font-family: shzc;
+        font-family: 'Noto Sans JP';
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
@@ -1428,14 +1431,16 @@ body *{
       border-right-color: #fff; }
     
     .masthead-buttons {
+      margin-top: 52px;
       padding-top: 30px;
       text-align: center; }
     
     .masthead-button-1 {
       background-color: white;
       border-radius: 100px;
+      letter-spacing: .5px;
       color: #111111;
-      font-family: shzc;
+      font-family: Bebaskai;
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
@@ -1502,7 +1507,7 @@ body *{
         margin-top: 11px; } }
     
     .site-footer {
-      font-family: shzc;
+      font-family: Bebaskai;
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
@@ -1533,7 +1538,7 @@ body *{
         padding-top: 25px; } }
     
     .cookie-banner {
-      font-family: shzc;
+      font-family: Bebaskai;
       width: 100%; }
       .cookie-banner .close-btn {
         cursor: pointer; }
@@ -1541,7 +1546,7 @@ body *{
     .lightbox-content {
       height: 100%; }
       .lightbox-content .grid__image-caption {
-        font-family: shzc; }
+        font-family: Bebaskai; }
     
     #lightbox-wrap,
     #lightbox-inner-wrap {
@@ -1549,7 +1554,7 @@ body *{
     
     .grid__image-caption,
     .grid__image-caption-lightbox {
-      font-family: shzc; }
+      font-family: Bebaskai; }
     
     .site-content {
       margin-left: 4%;
@@ -1938,8 +1943,8 @@ body *{
       top: 50%; }
     
     .project-cover {
-      margin-right: 5px;
-      width: calc(50% - 2.5px); }
+      margin-right: 12px;
+      width: calc(50% - 6px); }
       .project-cover.hold-space .cover-image:before {
         padding-bottom: 56.25%; }
       .project-cover .cover-image {
@@ -1971,7 +1976,7 @@ body *{
       .project-cover .title {
         color: #FFFFFF;
         float: none;
-        font-family: shzc;
+        font-family: Bebaskai;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
@@ -1987,7 +1992,7 @@ body *{
       .project-cover .date {
         color: #999999;
         float: none;
-        font-family: shzc;
+        font-family: Bebaskai;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -2003,7 +2008,7 @@ body *{
       .project-cover .custom1 {
         color: #999999;
         float: none;
-        font-family: shzc;
+        font-family: Bebaskai;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -2019,7 +2024,7 @@ body *{
       .project-cover .custom2 {
         color: #999999;
         float: none;
-        font-family: shzc;
+        font-family: Bebaskai;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -2035,7 +2040,7 @@ body *{
       .project-cover .description {
         color: #999999;
         float: none;
-        font-family: shzc;
+        font-family: Bebaskai;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -2146,7 +2151,7 @@ body *{
         padding-top: 0px; } }
     
     .project-cover .cover-content-container {
-      margin-bottom: 5px;
+      margin-bottom: 12px;
       margin-left: 0px;
       margin-right: 0px;
       margin-top: 0px; }
