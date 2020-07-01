@@ -5,6 +5,10 @@
   }
 }
 
+.details-wrap{
+  display: none !important;
+}
+
 .cover.cover-normal{
     background: #191919;
     color: #fff;
@@ -12,4 +16,14 @@
     align-items: center;
     justify-content: center;
     font-size: 32px;
+}
+
+/* blend mode */
+.cover-image-wrap {
+  mix-blend-mode: luminosity;
+  transition: mix-blend-mode 0.3s ease;
+}
+
+.cover-image-wrap:hover {
+  mix-blend-mode: unset;
 }
