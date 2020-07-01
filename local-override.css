@@ -1,0 +1,15 @@
+@font-face { font-family: Bebaskai; src:url('../BebasKai.otf'); }
+@media (max-width: 768px){
+  .desktop-only{
+    display: none;
+  }
+}
+
+.cover.cover-normal{
+    background: #191919;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
