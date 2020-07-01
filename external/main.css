@@ -99,8 +99,8 @@
     display: none; }
 
   .lightbox-link,
-  .lightbox-content.zoomable {
-    cursor: zoom-in; }
+  /* .lightbox-content.zoomable {
+    cursor: zoom-in; } */
 
   #lightbox-wrap .lightbox-contents {
     -moz-user-select: none;
