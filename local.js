@@ -25,7 +25,7 @@ $('document').ready(function() {
     },
     {
       title:"Tickdown",
-      desc: "this is desc 2",
+      desc: "Since I can't show most of my best projects due to NDA, here's a look at some of the works I did while interviewing for several companies. This is an attempt to show the quality I design at and that I don't cut corners, even for an interview.",
       imageUrl: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/37e02283195001.5d357100d2419.jpg"
     },
     {
@@ -35,8 +35,8 @@ $('document').ready(function() {
     },
     {
       title:"Cardiorythm",
-      desc: "this is desc 4",
-      imageUrl: "www.google.com"
+      desc: "Since I can't show most of my best projects due to NDA, here's a look at some of the works I did while interviewing for several companies. This is an attempt to show the quality I design at and that I don't cut corners, even for an interview.",
+      imageUrl: "https://mir-cdn.behance.net/v1/rendition/project_modules/fs/f138b199889481.5efcaad6d7df1.jpg"
     },
     {
       title:"Esports betting platform",
@@ -45,7 +45,7 @@ $('document').ready(function() {
     },
     {
       title:"Ticket Aggregator Platform",
-      desc: "this is desc 6",
+      desc: "A ticket aggregator platform for a US based company, you can compare and buy tickets to concerts across your city.",
       imageUrl: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/9a470d78648715.5cab5dda04874.jpg"
     }
   ]
@@ -54,17 +54,11 @@ $('document').ready(function() {
   $(".project--description").text(projectScreenList[projectNumber].desc);
   $(".project--image").attr("src", projectScreenList[projectNumber].imageUrl);
 
-  //random project number
-  projectNumber = projectNumber + 1;
-  var nextProjectNumber = (Math.random() * (6 - 1 + 1) ) << 0;
+  //next project number
+  var nextProjectNumber = projectNumber + 2;
 
-  if (projectNumber == nextProjectNumber){
-    if(nextProjectNumber != 6){
-      nextProjectNumber ++;
-    }
-    else if(nextProjectNumber != 1){
-      nextProjectNumber --;
-    }
+  if(nextProjectNumber >= 6 || nextProjectNumber <= 1){
+    nextProjectNumber = 1;
   }
 
   $("a.title-container").attr("href", 'project-page.html?numProject='+nextProjectNumber);
