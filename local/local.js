@@ -50,9 +50,12 @@ $('document').ready(function() {
     }
   ]
 
-  $(".project--title").text(projectScreenList[projectNumber].title);
-  $(".project--description").text(projectScreenList[projectNumber].desc);
-  $(".project--image").attr("src", projectScreenList[projectNumber].imageUrl);
+  if(projectNumber){
+    $(".project--title").text(projectScreenList[projectNumber].title);
+    $(".project--description").text(projectScreenList[projectNumber].desc);
+    $(".project--image").attr("src", projectScreenList[projectNumber].imageUrl);
+  }
+
 
   //next project number
   var nextProjectNumber = projectNumber + 2;
@@ -64,5 +67,15 @@ $('document').ready(function() {
   $("a.title-container.is-next-link").attr("href", 'project-template.html?numProject='+nextProjectNumber);
 
   // console.log(projectNumber, nextProjectNumber);
+
+
+  //lightslider
+  $("ul.lightSlider").lightSlider({
+    item: 1,
+    loop: true,
+    //gallery: true,
+    controls: true,
+    thumbMargin: 15,
+  });
 
 });
