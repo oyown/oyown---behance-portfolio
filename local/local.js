@@ -61,7 +61,7 @@ $('document').ready(function() {
     nextProjectNumber = 1;
   }
 
-  $("a.title-container.is-next-link").attr("href", 'project-page.html?numProject='+nextProjectNumber);
+  $("a.title-container.is-next-link").attr("href", 'project-template.html?numProject='+nextProjectNumber);
 
   // console.log(projectNumber, nextProjectNumber);
 

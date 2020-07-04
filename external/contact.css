@@ -1,4 +1,4 @@
-@font-face { font-family: Bebaskai; src:url('../BebasKai.otf'); }
+@font-face { font-family: Bebaskai; src:url('Fonts\BebasKai.otf'); }
 
 .site-header:after, .logo-wrap:after {
   clear: both;
