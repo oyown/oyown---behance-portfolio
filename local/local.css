@@ -1,4 +1,6 @@
 @font-face { font-family: Bebaskai; src:url('../Fonts/BebasKai.otf'); }
+@font-face { font-family: Skolar-Italic; src:url('../Fonts/Skolar/SkolarPE-Italic.ttf'); }
+@font-face { font-family: Skolar-Regular; src:url('../Fonts/Skolar/SkolarPE-Regular.ttf'); }
 @media (max-width: 768px){
   .desktop-only{
     display: none;
@@ -34,3 +36,82 @@
 .cover-image-wrap:hover {
   mix-blend-mode: unset;
 }
+
+
+/*ayn project body*/
+.ayn-project-body {
+  padding-bottom: 92px;
+  color: #b0b0b0;
+  font-family: "Skolar-Regular", "sans-serif";
+  font-size: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.ayn-project-body .content-width {
+  margin-bottom: 20px;
+}
+
+.ayn-project-body div.content-divider{
+  padding-top: 1px;
+  width: 60%;
+  background: #b0b0b0;
+  opacity: .4;
+  margin: 52px auto;
+}
+
+.ayn-project-body .content-width h3 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+.ayn-project-body .content-width h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.ayn-project-body .content-width p, .ayn-project-body .content-width ul {
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.ayn-project-body .content-width li {
+  list-style-type: circle;
+  margin-bottom: 8px;
+}
+
+.ayn-project-body .content-width blockquote {
+  position: relative;
+  color: #fff;
+}
+.ayn-project-body .content-width blockquote:after {
+  content:"";
+  position: absolute;
+  width: 8px;
+  top:0;
+  left:-40px;
+  height: 100%;
+  background: green;
+}
+
+.ayn-project-body .content-image {
+  padding: 32px;
+  margin-bottom: 32px;
+  background: rgba(34, 34, 34, 0);
+  min-height: 92px;
+  width: 100%;
+  transition: .3s ease;
+  border-radius: 4px;
+}
+
+.ayn-project-body .content-image:hover {
+  background: rgba(34, 34, 34, 1);
+}
+
+.ayn-project-body .content-width.intro, .ayn-project-body ul>h5 {
+  font-family: "Skolar-Italic", "sans-serif";
+}
+
+.ayn-project-body .content-width .white-highlight {
+ color: #fff;
+}
+
