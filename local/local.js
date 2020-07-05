@@ -73,9 +73,35 @@ $('document').ready(function() {
   $("ul.lightSlider").lightSlider({
     item: 1,
     loop: true,
-    //gallery: true,
-    controls: true,
+    gallery: true,
+    controls: false,
     thumbMargin: 15,
-  });
+  })
+  
+  //lightbox
+  $(".content-image").click(function(){
+    var el = $(this);
+    var imageSrc = el.find("img").attr("src");
+    var caption = el.find(".caption").text();
 
+    //console.log(el, image, caption)
+
+    $(".ayn-lightbox .lightbox-images").find(".image-bg").attr("style", "background-image: url('"+ imageSrc +"')");
+    $(".ayn-lightbox .lightbox-images").find(".caption").text(caption);
+    $(".ayn-lightbox").show();
+  })
+
+  $(".ayn-lightbox, .ayn-lightbox .is-cancel").click(function(item){
+    // console.log(item, item.target);
+    if($(item.target).is('img') || $(item.target).is('.caption')|| $(item.target).is('.is-rotate')){
+      
+    }
+    else{
+      $(".ayn-lightbox").hide();
+    }
+  })
+
+  $(".ayn-lightbox .is-rotate").click(function(item){
+    $(".ayn-lightbox").toggleClass("is-rotated");
+  });
 });

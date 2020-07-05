@@ -1565,7 +1565,7 @@
       padding-right: 4%;
       padding-top: 10px;
       position: fixed;
-      z-index: 3; }
+      z-index: 999; }
       .site-header.on-scroll {
         background-color: #222; }
         .site-header.on-scroll .logo,

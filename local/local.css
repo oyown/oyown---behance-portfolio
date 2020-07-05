@@ -45,11 +45,13 @@
   font-family: "Skolar-Regular", "sans-serif";
   font-size: 24px;
   padding: 0 32px;
-  max-width: 1024px;
+  max-width: 1360px;
   margin: 0 auto;
 }
 .ayn-project-body .content-width {
   margin-bottom: 20px;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .ayn-project-body div.content-divider{
@@ -125,5 +127,109 @@
 
 .ayn-project-body .content-width .white-highlight {
  color: #fff;
+}
+
+
+/* lightslider */
+
+.lSPager.lSGallery{
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.lSPager.lSGallery li{
+  min-width: 120px;
+  height: auto;
+  padding: 4px;
+  background-color: rgba(255, 255, 255,0);
+  border-radius: 0 !important;
+  overflow: visible !important;
+  position: relative;
+  list-style-type: none !important;
+}
+
+.lSPager.lSGallery li.active, .lSPager.lSGallery li:hover{
+  padding: 4px;
+  border-radius: 2px !important;
+  background-color:#616161;
+}
+
+.lSPager.lSGallery li.active:after{
+  content: "";
+  position: absolute;
+  top: 3px;
+  height: 12;
+  width: 12;
+  left: 47%;
+  transform: rotate(45deg) translate(-50%, -50%);
+  background-color:#616161;
+  z-index: -1;
+}
+
+/* lightbox */
+.ayn-lightbox{
+  /* visibility: hidden; */
+  position: fixed;
+  padding: 84px 5% 42px 5%;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .9);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transform: rotate(0deg);
+  transition: all .3s ease;
+}
+
+.ayn-lightbox.show{
+  /* visibility: visible; */
+}
+
+.ayn-lightbox.is-rotated{
+  transform: rotate(90deg);
+}
+
+.ayn-lightbox .lightbox-images{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 90vw;
+  height: 70vh;
+}
+
+.ayn-lightbox .lightbox-images .caption{
+  font-size: 24px;
+  font-family: "Skolar-Regular", sans-serif;
+  color: #fff;
+  margin: 42px;
+}
+
+.ayn-lightbox .lightbox-images .image-bg{
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ayn-lightbox .lightbox-actions{
+  display: flex;
+  max-width: 40%;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 24px;
+  color: #fff;
+}
+
+.ayn-lightbox .lightbox-actions .icn_lightbox{
+  height: 60px;
+  width: 60px;
+  border-radius:21rem;
+  background: rgb(46, 46, 46);
 }
 
