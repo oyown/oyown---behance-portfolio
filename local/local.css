@@ -44,7 +44,8 @@
   color: #b0b0b0;
   font-family: "Skolar-Regular", "sans-serif";
   font-size: 24px;
-  max-width: 800px;
+  padding: 0 32px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 .ayn-project-body .content-width {
@@ -95,6 +96,8 @@
 
 .ayn-project-body .content-image {
   padding: 32px;
+  padding-bottom: 52px;
+  position: relative;
   margin-bottom: 32px;
   background: rgba(34, 34, 34, 0);
   min-height: 92px;
@@ -103,11 +106,20 @@
   border-radius: 4px;
 }
 
+.ayn-project-body .content-image .caption{
+  color: #b0b0b0;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+
 .ayn-project-body .content-image:hover {
   background: rgba(34, 34, 34, 1);
 }
 
-.ayn-project-body .content-width.intro, .ayn-project-body ul>h5 {
+.ayn-project-body .content-width.intro, .ayn-project-body ul>h5, .ayn-project-body .content-image .caption{
   font-family: "Skolar-Italic", "sans-serif";
 }
 
