@@ -85,6 +85,7 @@
 .ayn-project-body .content-width blockquote {
   position: relative;
   color: #fff;
+  padding: 12px 0px;
 }
 .ayn-project-body .content-width blockquote:after {
   content:"";
@@ -221,7 +222,7 @@
   display: flex;
   max-width: 40%;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 24px;
   color: #fff;
 }
@@ -231,5 +232,16 @@
   width: 60px;
   border-radius:21rem;
   background: rgb(46, 46, 46);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.ayn-lightbox .lightbox-actions .icn_lightbox svg{
+  fill: #fff;
+}
+
+/* mobile styles */
+@media (max-width: 1200px){
+  
+}
