@@ -76,6 +76,7 @@ $('document').ready(function() {
     gallery: true,
     controls: false,
     thumbMargin: 15,
+    enableDrag:false,
   })
   
   //lightbox
