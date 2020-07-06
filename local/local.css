@@ -7,6 +7,10 @@
   }
 }
 
+body.no-scroll{
+  overflow: hidden;
+}
+
 .site-content{
   width: 100%;
   max-width: 1440px;
@@ -50,9 +54,9 @@
   margin: 0 auto;
 }
 .ayn-project-body .content-width {
-  margin-bottom: 20px;
   max-width: 1024px;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .ayn-project-body div.content-divider{
@@ -66,7 +70,7 @@
 .ayn-project-body .content-width h3 {
   font-size: 32px;
   font-weight: bold;
-  color: #fff;
+  color: #3DBA71;
 }
 .ayn-project-body .content-width h4 {
   font-size: 20px;
@@ -95,7 +99,7 @@
   top:0;
   left:-40px;
   height: 100%;
-  background: green;
+  background: #3DBA71;
 }
 
 .ayn-project-body .content-image {
@@ -212,6 +216,7 @@
   font-family: "Skolar-Regular", sans-serif;
   color: #fff;
   margin: 42px;
+  text-align: center;
 }
 
 .ayn-lightbox .lightbox-images .image-bg{
@@ -247,6 +252,31 @@
 
 /* mobile styles */
 @media (max-width: 1200px){
+  .ayn-project-body .content-width {
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  .ayn-project-body .content-width h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
+
+  .ayn-project-body .content-width blockquote {
+    position: relative;
+    color: #fff;
+    padding: 8px 0px 8px 19px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .ayn-project-body .content-width blockquote:after {
+    left: 0;
+    width: 4px;
+  }
+
   .page-header .title.project--title {
     font-size: 42px;
     line-height: 1;

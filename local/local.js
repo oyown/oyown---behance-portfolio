@@ -70,16 +70,17 @@ $('document').ready(function() {
 
 
   //lightslider
-  $("ul.lightSlider").lightSlider({
-    item: 1,
-    loop: true,
-    gallery: true,
-    controls: false,
-    thumbMargin: 15,
-  })
+  // $("ul.lightSlider").lightSlider({
+  //   item: 1,
+  //   loop: true,
+  //   gallery: true,
+  //   controls: false,
+  //   thumbMargin: 15,
+  // })
   
   //lightbox
   $(".content-image").click(function(){
+    $('body').addClass("no-scroll");
     var el = $(this);
     var imageSrc = el.find("img").attr("src");
     var caption = el.find(".caption").text();
@@ -92,7 +93,7 @@ $('document').ready(function() {
   })
 
   $(".ayn-lightbox, .ayn-lightbox .is-cancel").click(function(item){
-    // console.log(item, item.target);
+    $('body').removeClass("no-scroll");
     if($(item.target).is('img') || $(item.target).is('.caption')|| $(item.target).is('.is-rotate')){
       
     }
