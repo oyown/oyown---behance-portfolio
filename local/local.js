@@ -70,13 +70,13 @@ $('document').ready(function() {
 
 
   //lightslider
-  // $("ul.lightSlider").lightSlider({
-  //   item: 1,
-  //   loop: true,
-  //   gallery: true,
-  //   controls: false,
-  //   thumbMargin: 15,
-  // })
+  $("ul.lightSlider").lightSlider({
+    item: 1,
+    loop: true,
+    gallery: true,
+    controls: false,
+    thumbMargin: 15,
+  })
   
   //lightbox
   $(".content-image").click(function(){
