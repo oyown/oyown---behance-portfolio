@@ -91,6 +91,7 @@ body.no-scroll{
   position: relative;
   color: #fff;
   padding: 12px 0px;
+  line-height: 1.5;
 }
 .ayn-project-body .content-width blockquote:after {
   content:"";
