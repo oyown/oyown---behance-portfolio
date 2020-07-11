@@ -86,6 +86,10 @@ body.no-scroll {
   margin-bottom: 80px;
 }
 
+.ayn-project-body .content-width.intro {
+  opacity: .7;
+}
+
 .ayn-project-body div.content-divider {
   padding-top: 1px;
   width: 60%;
