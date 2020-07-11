@@ -170,7 +170,7 @@ body.no-scroll {
   background: rgba(34, 34, 34, 1);
 }
 
-.ayn-project-body .content-width.intro, .ayn-project-body ul>h5, .ayn-project-body .content-image .caption {
+.ayn-project-body .content-width.intro, .ayn-project-body ul>h5, .ayn-project-body .content-image .caption, .ayn-project-body .is-italic {
   font-family: "Skolar-Italic", "sans-serif";
 }
 
@@ -296,6 +296,11 @@ body.no-scroll {
 /* mobile styles */
 
 @media (max-width: 1200px) {
+  .ayn-project-body {
+    font-size: 20px;
+    padding: 0 16px;
+  }
+
   .ayn-project-body .content-width {
     max-width: 1024px;
     margin: 0 auto;
@@ -328,9 +333,7 @@ body.no-scroll {
     line-height: 1.5;
     padding-bottom: 13px;
   }
-  .ayn-project-body {
-    font-size: 20px;
-  }
+ 
   .ayn-project-body .content-image {
     padding: 0;
     padding-bottom: 32px;
