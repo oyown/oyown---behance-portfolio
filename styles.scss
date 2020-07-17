@@ -1,3 +1,93 @@
 body{
-    background: white;
+    background:#fff;
+    margin: 0;
+    padding: 0;
+ *{
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+ }   
+}
+
+h1, h3{
+    font-family: 'DM Serif Display', serif;
+}
+
+h1, h3, p, img{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.oyn-container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 42px;
+}
+
+.panels{
+    justify-content: space-between;
+    height: 92vh;
+    width: 100%;    
+    padding-top: 92px;
+    .left-panel{
+        height: 100%;
+        border: 1px solid red;
+        justify-content: flex-end;
+    }
+    .right-panel{
+        height: 100%;
+        .list--project{
+            height: 100%;
+            justify-content: space-between;
+            .project-link{
+                position: relative;
+                .project-thumb{
+                    position: relative;
+                    margin-right: 20px;
+                    margin-bottom: 20px;
+                    img{
+                        height: 90px;
+                        width: 90px;
+                        border-radius: 4px;
+                    }
+                    &:before{
+                        content: "";
+                        position: absolute;
+                        height: 90px;
+                        width: 90px;
+                        border: 2px solid green;
+                        top: 8%;
+                        left: -12%;
+                        z-index: -1;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+                .project-data{
+                    .project-title{
+                        font-size: 32px;
+                    }
+                    .project-desc{
+
+                    }
+                }
+                a.wrap-link{
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    z-index: 2;
+                }
+            }
+        }
+    }
 }

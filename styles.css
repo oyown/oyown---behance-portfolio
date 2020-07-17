@@ -1,4 +1,112 @@
 body {
-  background: red;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+body * {
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h3 {
+  font-family: 'DM Serif Display', serif;
+}
+
+h1, h3, p, img {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.oyn-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 42px;
+}
+
+.panels {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 92vh;
+  width: 100%;
+  padding-top: 92px;
+}
+
+.panels .left-panel {
+  height: 100%;
+  border: 1px solid red;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.panels .right-panel {
+  height: 100%;
+}
+
+.panels .right-panel .list--project {
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.panels .right-panel .list--project .project-link {
+  position: relative;
+}
+
+.panels .right-panel .list--project .project-link .project-thumb {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.panels .right-panel .list--project .project-link .project-thumb img {
+  height: 90px;
+  width: 90px;
+  border-radius: 4px;
+}
+
+.panels .right-panel .list--project .project-link .project-thumb:before {
+  content: "";
+  position: absolute;
+  height: 90px;
+  width: 90px;
+  border: 2px solid green;
+  top: 8%;
+  left: -12%;
+  z-index: -1;
+}
+
+.panels .right-panel .list--project .project-link .project-thumb:last-child {
+  margin-bottom: 0;
+}
+
+.panels .right-panel .list--project .project-link .project-data .project-title {
+  font-size: 32px;
+}
+
+.panels .right-panel .list--project .project-link a.wrap-link {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
 /*# sourceMappingURL=styles.css.map */
