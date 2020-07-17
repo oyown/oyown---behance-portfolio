@@ -19,6 +19,31 @@
   }
 }
 
+body{
+  background: #fff;
+  color: #191919;
+}
+
+.masthead p{
+  color: #191919;
+  font-family: "Skolar-Regular", "sans-serif" !important;
+}
+
+.masthead .highlight{
+  font-family: "Skolar-Italic", "sans-serif";
+}
+
+.masthead-button-1{
+  background: #191919;
+  color: #fff;
+}
+
+.masthead-button-1.is-download-btn{
+  background: #fff;
+  color: #191919;
+  text-decoration: underline;
+}
+
 body.no-scroll {
   overflow: hidden;
 }
