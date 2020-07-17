@@ -28,6 +28,9 @@ body, .site-wrap{
   .project-covers{
     padding: 0 120px;
   }
+  .masthead-contents{
+    height: 70%;
+  }
 }
 
 .masthead p{
