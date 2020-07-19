@@ -13,7 +13,10 @@ body{
     font-family: $font-secondary;
     line-height: 1.5;
     box-sizing: border-box;
- }   
+ }
+ &.other-page{
+     padding-top: 72px;
+ }
 }
 
 h1, h3{
@@ -48,11 +51,17 @@ h1, h3, p, img{
     position: fixed;
     top: 0;
     padding: 42px 0;
+    z-index: 999;
     img{
         height: auto;
     }
+    &.other-page{
+        background: #fff;
+        padding: 22px 0;
+    }
 }
 
+// home page
 .panels{
     width: 100%;
     justify-content: space-between;
@@ -103,10 +112,6 @@ h1, h3, p, img{
                 overflow: hidden;
                 margin-bottom: 20px;
                 border-radius: 12px;
-                background-color: rgba(0, 0, 0, 0);
-                background-size: contain;
-                background-position: 0% 0%;
-                background-repeat: no-repeat;
                 img{
                     height: 100%;
                     width: 100%;
@@ -124,7 +129,6 @@ h1, h3, p, img{
                     z-index: 2;
                 }
                 &:hover{
-                    background-size: cover;
                     img{
                         transform: scale(1.01);
                     }
@@ -206,5 +210,13 @@ h1, h3, p, img{
     .current-state{
         font-weight: 600;
         opacity: 0.4;
+    }
+}
+
+// project page
+.ayn-project-body{
+    img{
+        width: 100%;
+        height: auto;
     }
 }

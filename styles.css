@@ -12,6 +12,10 @@ body * {
           box-sizing: border-box;
 }
 
+body.other-page {
+  padding-top: 72px;
+}
+
 h1, h3 {
   font-family: "IBM Plex Serif", "serif";
 }
@@ -50,10 +54,16 @@ h1, h3, p, img {
   position: fixed;
   top: 0;
   padding: 42px 0;
+  z-index: 999;
 }
 
 .navbar img {
   height: auto;
+}
+
+.navbar.other-page {
+  background: #fff;
+  padding: 22px 0;
 }
 
 .panels {
@@ -117,10 +127,6 @@ h1, h3, p, img {
   overflow: hidden;
   margin-bottom: 20px;
   border-radius: 12px;
-  background-color: rgba(0, 0, 0, 0);
-  background-size: contain;
-  background-position: 0% 0%;
-  background-repeat: no-repeat;
 }
 
 .panels .right-panel .list--project .project-thumb img {
@@ -138,10 +144,6 @@ h1, h3, p, img {
   height: 100%;
   width: 100%;
   z-index: 2;
-}
-
-.panels .right-panel .list--project .project-thumb:hover {
-  background-size: cover;
 }
 
 .panels .right-panel .list--project .project-thumb:hover img {
@@ -256,5 +258,10 @@ h1, h3, p, img {
 .site-actions .current-state {
   font-weight: 600;
   opacity: 0.4;
+}
+
+.ayn-project-body img {
+  width: 100%;
+  height: auto;
 }
 /*# sourceMappingURL=styles.css.map */
