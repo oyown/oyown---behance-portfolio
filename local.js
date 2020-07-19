@@ -1,4 +1,8 @@
 $('document').ready(function() {
+
+  //get scroll
+
+
   // read url
   var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = window.location.search.substring(1),
@@ -26,4 +30,10 @@ $('document').ready(function() {
     enableDrag:false,
   })
   
+  //project scroll animation
+  $(window).scroll(function(){
+    $(".project-details").css("opacity", 1 - $(window).scrollTop() / 500);
+  });
+
+
 });
