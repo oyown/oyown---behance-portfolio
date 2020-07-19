@@ -1,7 +1,11 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap');
+
 // variables
 $color-black: #292A2C;
-$font-primary: 'IBM Plex Serif', 'serif';
-$font-secondary: 'IBM PLex Sans', 'sans-serif';
+$font-primary: 'Red Rose', 'serif';
+$font-secondary: 'IBM Plex Sans', 'sans-serif';
 
 
 body{
@@ -215,8 +219,144 @@ h1, h3, p, img{
 
 // project page
 .ayn-project-body{
-    img{
-        width: 100%;
-        height: auto;
+    .banner-image{
+        margin-bottom: 52px;
+        img{
+            width: 100%;
+            transition: all 0.3s ease;
+            border-radius: 4px;
+        }
+        &:hover{
+            img{
+                border-radius: 32px;
+            }
+
+        }
+    }
+    .content-width{
+        font-size: 21px;
+        margin-bottom: 62px;
+        &>*:last-child{
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        &>*:not(.content-image):not(.lSSlideOuter){
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .white-highlight{
+            font-weight: 600;
+        }
+        p{
+            margin-bottom: 20px !important;
+        }
+
+
+        a{
+            font-style: italic;
+            font-family: $font-primary;
+        }
+
+        h1, h3{
+            font-size: 32px;
+            color: #38E1CC;
+            margin-bottom: 12px !important;
+        }
+
+        ul{
+            margin-bottom: 20px !important;
+        }
+
+        blockquote{
+            padding: 16px 32px !important;
+            background: rgba(0,0,0,.06);
+            position: relative;
+            &:after{
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 4px;
+                background: #38E1CC;
+                left: 0;
+                top: 0;
+            }
+        }
+        
+        .content-image{
+            position: relative;
+            margin: 52px auto;
+            width: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 32px;
+            transition: all .3s ease;
+            border-radius: 6px;
+            img{
+                max-width: 992px;
+                width: 100%;
+                height: auto;
+                border-radius: 6px;
+                border: 1px solid rgba(0,0,0,.06);
+                transition: all 0.3s ease;
+            }
+            &:hover{
+                background: rgba(0,0,0,.06);
+            }
+            .caption{
+                position: absolute;
+                bottom: -4px;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 14px;
+                font-family: $font-primary;
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* lightslider */
+
+        .lightslider .content-image, ul{
+            margin: 0 auto;
+        }
+
+        .lSPager.lSGallery {
+            width: 100% !important;
+            display: flex;
+            justify-content: center;
+            padding-top: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .lSPager.lSGallery li {
+            min-width: 120px;
+            height: auto;
+            padding: 4px;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 0 !important;
+            overflow: visible !important;
+            position: relative;
+            list-style-type: none !important;
+        }
+        
+        .lSPager.lSGallery li.active, .lSPager.lSGallery li:hover {
+            padding: 4px;
+            border-radius: 2px !important;
+            background-color: #b0b0b0;
+        }
+        
+        .lSPager.lSGallery li.active:after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            height: 12;
+            width: 12;
+            left: 47%;
+            transform: rotate(45deg) translate(-50%, -50%);
+            background-color: #b0b0b0;
+            z-index: -1;
+        }
     }
 }

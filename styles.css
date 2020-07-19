@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap");
 body {
   background: #fff;
   margin: 0;
@@ -6,7 +8,7 @@ body {
 
 body * {
   color: #292A2C;
-  font-family: "IBM PLex Sans", "sans-serif";
+  font-family: "IBM Plex Sans", "sans-serif";
   line-height: 1.5;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -17,7 +19,7 @@ body.other-page {
 }
 
 h1, h3 {
-  font-family: "IBM Plex Serif", "serif";
+  font-family: "Red Rose", "serif";
 }
 
 h1, h3, p, img {
@@ -88,7 +90,7 @@ h1, h3, p, img {
 }
 
 .panels .left-panel .header-text .title--page {
-  font-family: "IBM Plex Serif", "serif";
+  font-family: "Red Rose", "serif";
   font-size: 62px;
   margin-bottom: 8px;
 }
@@ -260,8 +262,168 @@ h1, h3, p, img {
   opacity: 0.4;
 }
 
-.ayn-project-body img {
+.ayn-project-body .banner-image {
+  margin-bottom: 52px;
+}
+
+.ayn-project-body .banner-image img {
+  width: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.ayn-project-body .banner-image:hover img {
+  border-radius: 32px;
+}
+
+.ayn-project-body .content-width {
+  font-size: 21px;
+  margin-bottom: 62px;
+  /* lightslider */
+}
+
+.ayn-project-body .content-width > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ayn-project-body .content-width > *:not(.content-image):not(.lSSlideOuter) {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.ayn-project-body .content-width .white-highlight {
+  font-weight: 600;
+}
+
+.ayn-project-body .content-width p {
+  margin-bottom: 20px !important;
+}
+
+.ayn-project-body .content-width a {
+  font-style: italic;
+  font-family: "Red Rose", "serif";
+}
+
+.ayn-project-body .content-width h1, .ayn-project-body .content-width h3 {
+  font-size: 32px;
+  color: #38E1CC;
+  margin-bottom: 12px !important;
+}
+
+.ayn-project-body .content-width ul {
+  margin-bottom: 20px !important;
+}
+
+.ayn-project-body .content-width blockquote {
+  padding: 16px 32px !important;
+  background: rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.ayn-project-body .content-width blockquote:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 4px;
+  background: #38E1CC;
+  left: 0;
+  top: 0;
+}
+
+.ayn-project-body .content-width .content-image {
+  position: relative;
+  margin: 52px auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  padding-bottom: 32px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border-radius: 6px;
+}
+
+.ayn-project-body .content-width .content-image img {
+  max-width: 992px;
   width: 100%;
   height: auto;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ayn-project-body .content-width .content-image:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.ayn-project-body .content-width .content-image .caption {
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-family: "Red Rose", "serif";
+  width: 100%;
+  text-align: center;
+}
+
+.ayn-project-body .content-width .lightslider .content-image, .ayn-project-body .content-width ul {
+  margin: 0 auto;
+}
+
+.ayn-project-body .content-width .lSPager.lSGallery {
+  width: 100% !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ayn-project-body .content-width .lSPager.lSGallery li {
+  min-width: 120px;
+  height: auto;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 0 !important;
+  overflow: visible !important;
+  position: relative;
+  list-style-type: none !important;
+}
+
+.ayn-project-body .content-width .lSPager.lSGallery li.active, .ayn-project-body .content-width .lSPager.lSGallery li:hover {
+  padding: 4px;
+  border-radius: 2px !important;
+  background-color: #b0b0b0;
+}
+
+.ayn-project-body .content-width .lSPager.lSGallery li.active:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  height: 12;
+  width: 12;
+  left: 47%;
+  -webkit-transform: rotate(45deg) translate(-50%, -50%);
+          transform: rotate(45deg) translate(-50%, -50%);
+  background-color: #b0b0b0;
+  z-index: -1;
 }
 /*# sourceMappingURL=styles.css.map */
