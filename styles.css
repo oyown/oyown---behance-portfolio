@@ -117,16 +117,18 @@ h1, h3, p, img {
   overflow: hidden;
   margin-bottom: 20px;
   border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0);
+  background-size: contain;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
 }
 
 .panels .right-panel .list--project .project-thumb img {
   height: 100%;
-  width: auto;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  width: 100%;
+  max-width: 100%;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
-  will-change: transform;
 }
 
 .panels .right-panel .list--project .project-thumb .thumb--link {
@@ -136,6 +138,10 @@ h1, h3, p, img {
   height: 100%;
   width: 100%;
   z-index: 2;
+}
+
+.panels .right-panel .list--project .project-thumb:hover {
+  background-size: cover;
 }
 
 .panels .right-panel .list--project .project-thumb:hover img {
