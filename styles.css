@@ -70,8 +70,7 @@ h1, h3, p, img {
   position: -webkit-sticky;
   position: sticky;
   bottom: 172px;
-  width: 40vw;
-  max-width: 50%;
+  max-width: 46%;
 }
 
 .panels .left-panel .header-text img.emoji--hi {
@@ -107,21 +106,41 @@ h1, h3, p, img {
   letter-spacing: .4px;
 }
 
+.panels .right-panel {
+  margin-top: 42px;
+}
+
 .panels .right-panel .list--project .project-thumb {
   position: relative;
+  height: 700px;
+  width: 550px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 12px;
 }
 
 .panels .right-panel .list--project .project-thumb img {
-  height: 700px;
+  height: 100%;
   width: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  will-change: transform;
 }
 
-.panels .right-panel .list--project .project-thumb .thumb-link {
+.panels .right-panel .list--project .project-thumb .thumb--link {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+  z-index: 2;
+}
+
+.panels .right-panel .list--project .project-thumb:hover img {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .site-actions {

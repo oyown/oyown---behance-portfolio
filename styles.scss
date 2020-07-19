@@ -60,8 +60,7 @@ h1, h3, p, img{
     .left-panel{
         position: sticky;
         bottom: 172px;
-        width: 40vw;
-        max-width: 50%;
+        max-width: 46%;
         .header-text{
             img.emoji--hi{
                 height: 62px;
@@ -95,19 +94,34 @@ h1, h3, p, img{
         }
     }
     .right-panel{
+        margin-top: 42px;
         .list--project{
             .project-thumb{
                 position: relative;
+                height: 700px;
+                width: 550px;
+                overflow: hidden;
+                margin-bottom: 20px;
+                border-radius: 12px;
                 img{
-                    height: 700px;
+                    height: 100%;
                     width: auto;
+                    transform: scale(1);
+                    transition: all .5s ease;
+                    will-change: transform;
                 }
-                .thumb-link{
+                .thumb--link{
                     position: absolute;
                     top: 0;
                     left: 0;
                     height: 100%;
                     width: 100%;
+                    z-index: 2;
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.01);
+                    }
                 }
             }
         }
