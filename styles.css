@@ -360,6 +360,7 @@ h1, h3, p, img {
 }
 
 .project-details .fixed-content-wrapper {
+  position: relative;
   max-width: 1440px;
   padding: 0 42px;
   margin: 0 auto;
@@ -494,6 +495,7 @@ h1, h3, p, img {
 
 .ayn-project-body .content-width blockquote {
   padding: 20px 32px !important;
+  margin: 28px auto !important;
   background: rgba(0, 0, 0, 0.06);
   position: relative;
   text-align: center;

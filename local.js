@@ -32,7 +32,10 @@ $('document').ready(function() {
   
   //project scroll animation
   $(window).scroll(function(){
-    $(".project-details").css("opacity", 1 - $(window).scrollTop() / 500);
+    var scrollTop = $(window).scrollTop();
+    $(".project-details").css("opacity", 1 - scrollTop / 500);
+    // console.log($(".project-details .project-overview"));
+    $(".project-details .fixed-content-wrapper").css("transform", "translateY(-"+ scrollTop/5 +"px)");
   });
 
 
