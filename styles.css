@@ -18,6 +18,12 @@ body.other-page {
   padding-top: 72px;
 }
 
+@media screen and (min-width: 1201px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
 .pre-loader {
   position: fixed;
   height: 100%;
@@ -127,7 +133,6 @@ h1, h3, p, img {
 .panels .left-panel .header-text .subheader {
   font-size: 24px;
   margin-bottom: 32px;
-  opacity: 0.7;
 }
 
 .panels .left-panel .header-text .subheader .has-tooltip {
@@ -240,7 +245,6 @@ h1, h3, p, img {
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  margin-right: 20px;
 }
 
 .cta--sponge .cta-text {
@@ -284,6 +288,10 @@ h1, h3, p, img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.site-actions .cta--sponge {
+  margin-right: 20px;
 }
 
 .site-actions .current-state {
@@ -588,5 +596,217 @@ h1, h3, p, img {
 body.project--webdev .project-details {
   background: #c4c0fd;
   padding: 20vh 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .desktop-only {
+    display: none !important;
+  }
+  .oyn-container {
+    max-width: 1024px;
+    padding: 0 16px;
+  }
+  .navbar {
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 0;
+    position: relative;
+  }
+  .navbar.is-other-page {
+    position: fixed;
+  }
+  .panels {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 32px;
+  }
+  .panels .left-panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+  }
+  .panels .left-panel .header-text {
+    text-align: center;
+  }
+  .panels .left-panel .header-text .subheader {
+    font-size: 18px;
+    line-height: 1.7;
+    opacity: .7;
+  }
+  .panels .left-panel .header-text .list--industry {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .panels .left-panel .cta--sponge.mobile-only {
+    margin-top: 42px;
+    margin-right: 0;
+  }
+  .panels .right-panel .list--project .project-thumb {
+    width: 100%;
+    height: 502px;
+  }
+  .panels .right-panel .list--project .project-thumb img {
+    width: 100%;
+    height: auto;
+  }
+  .site-actions {
+    position: static;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin-top: 32px;
+    font-size: 14px;
+  }
+  .site-actions .cta--sponge {
+    margin-bottom: 16px;
+    margin-right: 0;
+  }
+  .site-actions .social-links {
+    margin: 20px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .site-actions .social-links a {
+    color: #292A2C;
+    font-weight: 600;
+    position: relative;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    will-change: transform;
+  }
+  .site-actions .social-links a:hover {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+  }
+  .site-actions .social-links a img {
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+  }
+  .project-details .fixed-content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .project-details .fixed-content-wrapper > * {
+    max-width: 100%;
+  }
+  .project-details .fixed-content-wrapper .project-overview .project-title {
+    line-height: 1;
+  }
+  .project-details .fixed-content-wrapper .project-overview .project-title div {
+    margin-top: 20px;
+  }
+  .ayn-project-body {
+    padding-top: 240px;
+  }
+  .ayn-project-body .project-stats {
+    width: 100%;
+    max-width: 30%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 52px !important;
+  }
+  .ayn-project-body .project-stats > div {
+    width: 100%;
+  }
+  .ayn-project-body .project-stats .stat {
+    margin-bottom: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ayn-project-body .project-stats .stat .stat-title {
+    font-family: "Red Rose", "serif";
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 2px;
+  }
+  .ayn-project-body .project-stats .stat .stat-value {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .ayn-project-body .project-stats .stat .stat-value span.points {
+    margin-bottom: 8px;
+  }
+  .ayn-project-body .project-stats .stat .stat-value span.points:last-child {
+    margin-bottom: 0;
+  }
+  .ayn-project-body .project-stats .stat:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .ayn-project-body .content-width blockquote {
+    font-size: 18px;
+    text-align: left;
+  }
+  .ayn-project-body .content-width .content-image {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 32px;
+    margin: 32px 0;
+  }
+  .ayn-project-body .content-width .content-image:hover {
+    background: transparent;
+  }
+  .ayn-project-body .content-width .content-image img {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
