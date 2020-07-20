@@ -18,6 +18,30 @@ body.other-page {
   padding-top: 72px;
 }
 
+.pre-loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  z-index: 1999;
+}
+
+.pre-loader video {
+  height: 20%;
+  width: auto;
+}
+
 h1, h3 {
   font-family: "Red Rose", "serif";
 }

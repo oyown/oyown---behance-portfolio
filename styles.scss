@@ -23,6 +23,23 @@ body{
  }
 }
 
+.pre-loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    z-index: 1999;
+    video{
+        height: 20%;
+        width: auto;
+    }
+}
+
 h1, h3{
     font-family: $font-primary;
 }

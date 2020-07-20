@@ -1,6 +1,11 @@
-$('document').ready(function() {
 
-  //get scroll
+
+$('document').ready(function() {
+  window.onload = function () {
+    setTimeout(function(){
+      $(".pre-loader").fadeOut(600, function(){ $(".pre-loader").remove(); } ); 
+    }, 750)
+  }
 
 
   // read url
@@ -21,6 +26,7 @@ $('document').ready(function() {
 
 
   //lightslider
+  if($("ul.lightSlider").length>0){
   $("ul.lightSlider").lightSlider({
     item: 1,
     loop: true,
@@ -29,6 +35,7 @@ $('document').ready(function() {
     thumbMargin: 15,
     enableDrag:false,
   })
+}
   
   //project scroll animation
   $(window).scroll(function(){
